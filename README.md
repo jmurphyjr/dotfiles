@@ -11,7 +11,7 @@ Clone repo and run `./install.sh`
 Install without git
 ```bash
 cd; mkdir dotfiles; cd dotfiles; \
-curl -#L https://github.com/aziz/dotfiles/tarball/master | \
+curl -#L https://github.com/jmurphyjr/dotfiles/tarball/master | \
 tar -xzv --strip-components 1; \
 ./install.sh
 ```
@@ -25,5 +25,6 @@ tar -xzv --strip-components 1; \
 
 ---
 ##### Credit
-Inspired and borrowed form Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans,
+Allen Bargi provided the template. Allen was inspired by
+Inspired and borrowed from Ryan Bates, Ryan Tomayko, Carlhuda, Robert Evans,
 Mathias Bynens and Mislav Marohnić dotfile repos.
