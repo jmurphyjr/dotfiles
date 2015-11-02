@@ -1,9 +1,6 @@
 ansifilter
-autojump
-awscli
 bash
-bash-completion
-boot2docker
+bash-completion2
 brew-cask
 cask
 coreutils
@@ -11,6 +8,8 @@ curl
 diffutils
 direnv
 distribution
+dnsmasq
+dos2unix
 findutils --with-default-names
 git
 git-extras
@@ -20,10 +19,8 @@ go
 grep --with-default-names
 gzip
 heroku-toolbelt
-homebrew/completions/boot2docker-completion
 homebrew/completions/bundler-completion
 homebrew/completions/gem-completion
-homebrew/completions/grunt-completion
 homebrew/completions/pip-completion
 homebrew/completions/rails-completion
 homebrew/completions/rake-completion
@@ -33,14 +30,24 @@ homebrew/completions/vagrant-completion
 hub
 jq
 man2html
+markdown
+mysql
 node
 openssh
 openssl
 p7zip
-postgresql
+php56
+php56-mcrypt
+php56-intl
+php56-opcache
+pidcat
 python
-python3
-redis
+pyenv
+pyenv-virtualenv
+pyenv-virtualenvwrapper
+pyqt5
+scipy
+matplotlib
 rename
 rmtrash
 rsync
@@ -48,6 +55,7 @@ shellcheck
 sqlite
 ssh-copy-id
 the_silver_searcher
+tidy-html5
 tmux
 tree
 unrar
