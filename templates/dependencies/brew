@@ -41,6 +41,7 @@ php56-mcrypt
 php56-intl
 php56-opcache
 pidcat
+postgresql
 python
 pyenv
 pyenv-virtualenv

@@ -60,10 +60,6 @@
   new  = green
 [difftool]
   prompt = false
-[difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f

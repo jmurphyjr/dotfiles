@@ -21,6 +21,7 @@ export LC_ALL='en_US.UTF-8'
 # history handling
 export HISTCONTROL='ignoreboth'
 export HISTSIZE=500000
+export HISTTIMEFORMAT=' :%Y-%j-%T: '
 export HISTFILESIZE="${HISTSIZE}"
 export AUTOFEATURE=true autotest
 
