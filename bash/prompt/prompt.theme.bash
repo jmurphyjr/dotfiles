@@ -28,8 +28,20 @@ aws_saml_prompt () {
   fi
 }
 
+if [[ "${USER}" == "root" ]]; then
+  userStyle="${red}";
+else
+  userStyle="${orange}";
+fi
+
+if [[ "${SSH_TTY}" ]]; then
+  hostStyle="${bold_red}";
+else
+  hostStyle="${yellow}";
+fi
+
 prompt_left () {
-  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${yellow}\]\w\[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${custom_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${custom_gray}\]\[$(date "+%_I:%M:%S %P")\]"
+  LEFT_PROMPT="\[\033[G\]\`${EXIT_STATUS}\`\[${userStyle}\]\u\[${normal}\] at \[${hostStyle}\]\h\[${normal}\] in \[${yellow}\]\w\[\$(aws_saml_prompt)\]\[\$(rvmrc_version_prompt)\]\[${custom_blue}\]\[\$(scm_char)\]\[\$(scm_prompt_info)\]\[${normal}\]\[${custom_gray}\]\[$(date "+%_I:%M:%S %P")\]"
   echo -e "${LEFT_PROMPT}"
 }
 

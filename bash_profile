@@ -21,9 +21,12 @@ export LC_ALL='en_US.UTF-8'
 # history handling
 export HISTCONTROL='ignoreboth'
 export HISTSIZE=500000
-export HISTTIMEFORMAT=' :%Y-%j-%T: '
+export HISTTIMEFORMAT='%F %T '
 export HISTFILESIZE="${HISTSIZE}"
 export AUTOFEATURE=true autotest
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 # Identify OS and Machine
 export OS=`uname -s | sed -e 's/ *//g;y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/'`

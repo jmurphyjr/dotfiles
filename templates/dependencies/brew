@@ -4,6 +4,7 @@ bash-completion2
 brew-cask
 cask
 coreutils
+ctags
 curl
 diffutils
 direnv
@@ -13,6 +14,7 @@ dos2unix
 findutils --with-default-names
 git
 git-extras
+git-lfs
 gnu-sed --with-default-names
 gnu-tar --with-default-names
 go

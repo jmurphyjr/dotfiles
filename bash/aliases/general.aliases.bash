@@ -53,3 +53,11 @@ alias cls='clear'
 alias w='which'
 alias q="exit"
 alias h='history'
+
+# Some aliases from Paul Irish see: https://github.com/paulirish/dotfiles/blob/master/.aliases
+alias ho='sudo $EDITOR /etc/hosts'   # occasionally need to test failing requests.
+
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias dig="dig +nocmd any +multiline +noall +answer"
+
+

@@ -1,3 +1,5 @@
+[include]
+  path = ~/private/my_git_config.inc
 [alias]
   co        = checkout
   unstage   = reset HEAD

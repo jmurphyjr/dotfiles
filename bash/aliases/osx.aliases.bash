@@ -5,6 +5,7 @@ if [ "$(uname)" = "Darwin" ]; then
   alias safari="open -a safari"
   alias firefox="open -a firefox"
   alias chrome="open -a google\ chrome"
+  alias canary="open -a google\ chrome\ canary"
   alias gx="gitx --commit"
   alias gu="gitup commit"
   alias f="open -a Finder "
@@ -15,7 +16,7 @@ if [ "$(uname)" = "Darwin" ]; then
 
   # Empty the Trash on all mounted volumes and the main HDD
   # Also, clear Apple’s System Logs to improve shell startup speed
-  alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+  alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl; sudo rm /private/var/vm/sleepimage"
 
   alias mac-desktop-hide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
   alias mac-desktop-show="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
@@ -36,6 +37,6 @@ if [ "$(uname)" = "Darwin" ]; then
   # Recursively delete `.DS_Store` files
   alias mac-ds-store-cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
-  alias mac-mac-address-wired="ifconfig en0 | grep ether"
-  alias mac-mac-address-wireless="ifconfig en1 | grep ether"
+  alias mac-mac-address-wired="ifconfig en1 | grep ether"
+  alias mac-mac-address-wireless="ifconfig en0 | grep ether"
 fi
