@@ -9,7 +9,7 @@ for dir in $bash_dirs; do
 done
 
 # Load Privates
-PRIVATES="${BASH}/../private/*.bash"
+PRIVATES="private/*.bash"
 for config_file in $PRIVATES; do
   source "$config_file"
 done

@@ -2,6 +2,7 @@
 
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$HOME/.mac:$HOME/go/bin:$HOME/.rvm/bin:$HOME/.npm-packages/bin:$HOME/.bash/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home"
 
 export TERM="xterm-256color"
 
@@ -69,3 +70,16 @@ shopt -s cdspell
 
 # append to bash_history if Terminal.app quits
 shopt -s histappend
+
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+
+# Turn off Homebrew analytics.
+export HOMEBREW_NO_ANALYTICS=1
+
+source /usr/local/opt/autoenv/activate.sh
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+
